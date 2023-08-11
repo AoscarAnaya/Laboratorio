@@ -17,7 +17,7 @@ si es de noche  y con clima frio  ponte una pants y sueter
 si es de noche y con clima caliente ponte un unos short 
 */
 
-alert ( "este programa te ayudara a saber que te pones")
+//alert( "este programa te ayudara a saber que te pones")
 var tipoDesexo = prompt( "eres  mujer o hombre, por favor escribe M(si eres mujer) y H ( si eres hombre")
 
 
@@ -26,15 +26,15 @@ var diaOnoche = prompt ("es de dia o de noche: Escribre N(si es de noche) y D(si
 var tipoDeclima = prompt(" tipo de clima es frio o caliente")
 
 
-if (tipoDesexo.toLowerCase() == "m"){
-    if (diaOnoche == "d"){
-        if (tipoDeclima == "c"){
+if (tipoDesexo.toLowerCase() == "h" && diaOnoche.toLowerCase() == "d" && tipoDeclima.toLowerCase() == "c"){
+    /* if (diaOnoche.toLowerCase() == "d"){
+        if (tipoDeclima.toLowerCase() == "c"){
 
         }
         /* ponte un saco de dia */
-    }
- 
+        console.log("ponte pantalon")
+    
+  
 
-}else (tipoDesexo.toLowerCase == "h"){
-
-}
+}else (tipoDesexo.toLowerCase == "m")
+    console.log ("ponte vestido")
