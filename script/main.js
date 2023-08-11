@@ -17,7 +17,7 @@ si es de noche  y con clima frio  ponte una pants y sueter
 si es de noche y con clima caliente ponte un unos short 
 */
 
-//alert( "este programa te ayudara a saber que te pones")
+//confirm( "este programa te ayudara a saber que look puedes vestir, sigue las instrucciones")
 var tipoDesexo = prompt("eres  mujer o hombre, por favor escribe M(si eres mujer) y H ( si eres hombre")
 
 
@@ -27,17 +27,22 @@ var tipoDeclima = prompt(" tipo de clima es frio o caliente: Teclea F para frio 
 
 
 if (tipoDesexo.toLowerCase() == "h" || tipoDesexo.toLowerCase() == "hombre") {
-    if (diaOnoche.toLowerCase() == "d" || diaOnoche.toLowerCase( == "dia")) {
+    if (diaOnoche.toLowerCase() == "d" || diaOnoche.toLowerCase() == "dia") {
         if (tipoDeclima.toLowerCase() == "f" || tipoDeclima.toLowerCase()== "frio" ) {
             console.log("ponte traje con saco")
+            document.write("<img src='./img/hdf.jpeg'></img>");
         } else if (tipoDeclima.toLowerCase() == "c")
             console.log("ponte short con playera")
+            document.write("<img src='./img/hdc.jpeg'></img>")
+            
 
-    } else if (diaOnoche.toLowerCase() == "n") {
-        if (tipoDeclima.toLowerCase() == "f") {
+    } else if (diaOnoche.toLowerCase() == "n" || diaOnoche.toLowerCase() =="noche") {
+        if (tipoDeclima.toLowerCase() == "f" || tipoDeclima.toLowerCase() == "frio") {
             console.log("ponte un abrigo")
-        } else (tipoDeclima.toLowerCase() == "c")
+            document.write("<img src='./img/abrigo.jpeg'></img>")
+        } else (tipoDeclima.toLowerCase() == "c" || tipoDeclima.toLowerCase() == "caliente")
             console.log("ponte un  short con tank")
+            document.write("<img src='./img/hdt.jpeg'></img>")
         }
 
 
@@ -45,16 +50,16 @@ if (tipoDesexo.toLowerCase() == "h" || tipoDesexo.toLowerCase() == "hombre") {
    if (diaOnoche.toLowerCase() == "d" || diaOnoche.toLowerCase() == "dia") {
         if (tipoDeclima.toLowerCase() == "f" || tipoDeclima.toLowerCase() == "frio") {
             console.log("ponte vestido con saco")
-            document.write("<img src='./img/mnf.jpeg'></img>");
-        } else if (tipoDeclima.toLowerCase() == "c" || tipoDeclima.toLowerCase() == "calor")
+            document.write("<img src='./img/mnf.jpeg'></img>")
+        } else if (tipoDeclima.toLowerCase() == "c" || tipoDeclima.toLowerCase() == "caliente")
             console.log("ponte un vestido  fresco")
-            document.write("<img src='./img/mnc.jpeg'></img>");
-        }else if (diaOnoche.toLowerCase() == "n"){
-        if (tipoDeclima.toLowerCase() == "f"){
+            document.write("<img src='./img/mnc.jpeg'></img>")
+        }else if (diaOnoche.toLowerCase() == "n" || diaOnoche.toLowerCase() == "noche"){
+        if (tipoDeclima.toLowerCase() == "f" || tipoDeclima.toLowerCase() == "frio"){
             console.log("ponte una pants y sueter")
-            document.write("<img src='./img/mnf.jpeg'></img>");
-        } else (tipoDeclima.toLowerCase() == "c")
+            document.write("<img src='./img/mnf.jpeg'></img>")
+        } else (tipoDeclima.toLowerCase() == "c" || tipoDeclima.toLowerCase() =="caliente")
             console.log("ponte un unos short ")
-            document.write("<img src='./img/mdc.jpeg'></img>");
+            document.write("<img src='./img/mdc.jpeg'></img>")
     }
 }
